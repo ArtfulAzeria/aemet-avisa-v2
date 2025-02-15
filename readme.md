@@ -6,7 +6,7 @@ Esta es la segunda versión del bot, completamente reconstruida en Python, puede
 el código original, mayormente escrito en TypeScript, en [este repositorio](https://github.com/ArtfulAzeria/aemet-avisa).
 
 ## ¿Qué diferencias hay con la versión original?
-El repositorio de aemet-avisa-v2 es el resultado de un cambio importante en la aplicación, que la construcción del mapa
+El repositorio de aemet-avisa-v2 es el resultado de un cambio importante en la aplicación: la construcción del mapa
 programáticamente. Mientras que anteriormente se extraían los datos y solo se construía una respuesta en texto con ellos,
 en esta versión esos datos son usados también para crear un mapa.
 
@@ -18,7 +18,7 @@ Con esta nueva versión, al construir el mapa programáticamente se evita esa de
 
 Además, se resuelve otro gran problema, que era la ausencia de las Islas Canarias. Y es que al obtener el mapa
 por web-scrapping, y al tener la AEMET en su página los mapas de la peninsula y canarias por separado, se estaba omitiendo
-la susodicha parte del territorio español en las imágenes. Esto, a pesar de que los datos meteorológicos eran igualmente recibidos y procesados de forma correcta.
+la susodicha parte del territorio español en las imágenes. Esto sucedía a pesar de que los datos meteorológicos eran igualmente recibidos y procesados de forma correcta.
 
 Al crear el mapa en base puramente a los datos y sin scrapping, se puede manipular la imagen tanto como sea necesario. Cambios de colores, texto en el mapa,
 recortar la imagen, picture-in-picture... con ello podemos crear el típico mapa de España con un recorte de las islas canarias abajo a la izquierda.
