@@ -106,6 +106,9 @@ class Main:
             self.comm_set[comm] = alert_lvl
 
     def post_text(self):
+        if self.mock:
+            return "Esto es una prueba. Ninguno de los datos mostrados son reales."
+
         text = ""
 
         alert_groups = {}
