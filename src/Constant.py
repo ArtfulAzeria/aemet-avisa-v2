@@ -1,6 +1,7 @@
 AEMET_RSS = "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/rss/CAP_AFAE_wah_RSS.xml"
 AEMET_GEOJSON = "../resources/aemet_zones.geojson"
-COMMUNITIES_GEOJSON = "../resources/spain-communities.geojson"
+COMMUNITIES_GEOJSON = "../resources/spain_communities.geojson"
+MOCK_RSS = "../resources/mock_rss.xml"
 
 COMM_PARSE = {
         "Andalucía": "Andalucía",

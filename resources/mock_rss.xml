@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AEMET - Avisos de fenómenos meteorológicos adversos - España</title>
+    <link>https://www.aemet.es/es/eltiempo/prediccion/avisos</link>
+    <description>Avisos de fenómenos meteorológicos adversos según el Plan Meteoalerta de la Agencia Estatal de Meteorología (AEMET) para España.</description>
+    <language>es</language>
+    <copyright>https://www.aemet.es/es/nota_legal</copyright>
+    <pubDate>Sat,  8 Feb 2025 10:18:03 +0000</pubDate>
+    <lastBuildDate>Sat,  8 Feb 2025 10:18:03 +0000</lastBuildDate>
+    <image>
+      <title>AEMET - Avisos de fenómenos meteorológicos adversos - España</title>
+      <link>https://www.aemet.es/es/eltiempo/prediccion/avisos</link>
+      <url>https://www.aemet.es/imagenes/gif/logo_AEMET_web.gif</url>
+    </image>
+    <item>
+      <title>Aviso. Nivel rojo. Costeros. Ampurdán</title>
+      <description>Aviso de costeros de nivel rojo de 11:00 08-02-2025 CET (UTC+1) a 03:59 09-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250208101803_AFAZ691703COCO0903.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250208101803_AFAZ691703COCO0903.xml</guid>
+      <pubDate>Sat,  8 Feb 2025 10:18:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Pirineo oscense</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 09-02-2025 CET (UTC+1) a 08:59 09-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250208101803_AFAZ622201BTTI0908.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250208101803_AFAZ622201BTTI0908.xml</guid>
+      <pubDate>Sat,  8 Feb 2025 10:18:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Prepirineo de Barcelona</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 09-02-2025 CET (UTC+1) a 08:59 09-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250208101803_AFAZ690801BTTI0908.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250208101803_AFAZ690801BTTI0908.xml</guid>
+      <pubDate>Sat,  8 Feb 2025 10:18:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Pirineo de Girona</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 09-02-2025 CET (UTC+1) a 08:59 09-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250208101803_AFAZ691701BTTI0908.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250208101803_AFAZ691701BTTI0908.xml</guid>
+      <pubDate>Sat,  8 Feb 2025 10:18:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Valle de Arán</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 09-02-2025 CET (UTC+1) a 08:59 09-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250208101803_AFAZ692501BTTI0908.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250208101803_AFAZ692501BTTI0908.xml</guid>
+      <pubDate>Sat,  8 Feb 2025 10:18:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Pirineo de Lleida</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 09-02-2025 CET (UTC+1) a 08:59 09-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250208101803_AFAZ692502BTTI0908.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250208101803_AFAZ692502BTTI0908.xml</guid>
+      <pubDate>Sat,  8 Feb 2025 10:18:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Costeros. Litoral sur de Girona</title>
+      <description>Aviso de costeros de nivel amarillo de 11:00 08-02-2025 CET (UTC+1) a 14:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207182844_AFAZ691704COCO0814.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207182844_AFAZ691704COCO0814.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 18:28:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Pirineo navarro</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 18:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207171845_AFAZ743103NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207171845_AFAZ743103NENV0723.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 17:18:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Cantabria del Ebro</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207171845_AFAZ663904BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207171845_AFAZ663904BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 17:18:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Ibérica riojana</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207101933_AFAZ762602BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207101933_AFAZ762602BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:19:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Prepirineo de Barcelona</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 11:00 08-02-2025 CET (UTC+1) a 11:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207101546_AFAZ690801NENV0811.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207101546_AFAZ690801NENV0811.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:15:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Pirineo de Girona</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 11:00 08-02-2025 CET (UTC+1) a 11:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207101546_AFAZ691701NENV0811.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207101546_AFAZ691701NENV0811.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:15:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Valle de Arán</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 11:00 08-02-2025 CET (UTC+1) a 23:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207101546_AFAZ692501NENV0823.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207101546_AFAZ692501NENV0823.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:15:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Pirineo de Lleida</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 11:00 08-02-2025 CET (UTC+1) a 11:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207101546_AFAZ692502NENV0811.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207101546_AFAZ692502NENV0811.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:15:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Vientos. Litoral sur de Tarragona</title>
+      <description>Aviso de rachas máximas de nivel amarillo de 11:00 08-02-2025 CET (UTC+1) a 11:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207101546_AFAZ694304VIRM0811.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207101546_AFAZ694304VIRM0811.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:15:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Costeros. Litoral sur de Tarragona</title>
+      <description>Aviso de costeros de nivel amarillo de 11:00 08-02-2025 CET (UTC+1) a 13:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207101546_AFAZ694304COCO0813.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207101546_AFAZ694304COCO0813.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:15:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Serranía de Cuenca</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207100925_AFAZ681602BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207100925_AFAZ681602BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:09:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Serranía de Guadalajara</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207100925_AFAZ681901BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207100925_AFAZ681901BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:09:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Parameras de Molina</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207100925_AFAZ681902BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207100925_AFAZ681902BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 10:09:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Cordillera y Picos de Europa</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207093616_AFAZ633305BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207093616_AFAZ633305BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 09:36:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Ibérica de Burgos</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207083649_AFAZ670905BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207083649_AFAZ670905BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 08:36:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Cordillera Cantábrica de León</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207083649_AFAZ672401BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207083649_AFAZ672401BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 08:36:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Meseta de León</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207083649_AFAZ672403BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207083649_AFAZ672403BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 08:36:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Cordillera Cantábrica de Palencia</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207083649_AFAZ673401BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207083649_AFAZ673401BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 08:36:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Meseta de Palencia</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207083649_AFAZ673402BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207083649_AFAZ673402BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 08:36:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Ibérica de Soria</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207083649_AFAZ674201BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207083649_AFAZ674201BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 08:36:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Temperaturas mínimas. Sanabria</title>
+      <description>Aviso de temperatura mínima de nivel amarillo de 00:00 08-02-2025 CET (UTC+1) a 08:59 08-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207083649_AFAZ674901BTTI0808.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207083649_AFAZ674901BTTI0808.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 08:36:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Cantabria del Ebro</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 18:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250207072023_AFAZ663904NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250207072023_AFAZ663904NENV0723.xml</guid>
+      <pubDate>Fri,  7 Feb 2025 07:20:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Sistema Central de Segovia</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 09:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206173828_AFAZ674002NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206173828_AFAZ674002NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 17:38:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Liébana</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 18:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206170013_AFAZ663902NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206170013_AFAZ663902NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 17:00:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Centro y valle de Villaverde</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 18:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206170013_AFAZ663903NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206170013_AFAZ663903NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 17:00:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Cordillera y Picos de Europa</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 10:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206162145_AFAZ633305NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206162145_AFAZ633305NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 16:21:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Ibérica riojana</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 11:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206095108_AFAZ762602NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206095108_AFAZ762602NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 09:51:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Cordillera Cantábrica de Burgos</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 09:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206095005_AFAZ670901NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206095005_AFAZ670901NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 09:50:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Ibérica de Burgos</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 09:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206095005_AFAZ670905NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206095005_AFAZ670905NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 09:50:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Cordillera Cantábrica de León</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 09:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206095005_AFAZ672401NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206095005_AFAZ672401NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 09:50:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Cordillera Cantábrica de Palencia</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 09:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206095005_AFAZ673401NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206095005_AFAZ673401NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 09:50:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Ibérica de Soria</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 09:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206095005_AFAZ674201NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206095005_AFAZ674201NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 09:50:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Sistema Central de Soria</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 09:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206095005_AFAZ674203NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206095005_AFAZ674203NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 09:50:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Serranía de Guadalajara</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 11:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206080738_AFAZ681901NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206080738_AFAZ681901NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 08:07:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Aviso. Nivel amarillo. Nevadas. Sierra de Madrid</title>
+      <description>Aviso de acumulación de nieve en 24 horas de nivel amarillo de 11:00 07-02-2025 CET (UTC+1) a 23:59 07-02-2025 CET (UTC+1).</description>
+      <link>https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20250206080738_AFAZ722801NENV0723.xml</link>
+      <guid isPermaLink="false">Z_CAP_C_LEMM_20250206080738_AFAZ722801NENV0723.xml</guid>
+      <pubDate>Thu,  6 Feb 2025 08:07:38 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

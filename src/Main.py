@@ -12,7 +12,7 @@ from PIL import Image
 import geopandas as gpd
 import contextily as ctx
 from atproto import Client
-from datetime import datetime
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 import xml.etree.ElementTree as ET
@@ -22,8 +22,12 @@ if not os.path.exists(CONS.AEMET_GEOJSON):
     raise FileNotFoundError(f"El archivo {CONS.AEMET_GEOJSON} no existe")
 
 class Main:
-    def __init__(self):
-        self.rssponse = requests.get(CONS.AEMET_RSS)
+    def __init__(self, mock: False):
+        self.mock = mock
+        if self.mock:
+            self.rssponse = CONS.MOCK_RSS
+        else:
+            self.rssponse = requests.get(CONS.AEMET_RSS)
         self.geojsonAemet = gpd.read_file(CONS.AEMET_GEOJSON).to_crs(epsg=3857)
         self.geojsonCommunities = gpd.read_file(CONS.COMMUNITIES_GEOJSON).to_crs(epsg=3857)
         self.fig_base, self.ax_base = plt.subplots(figsize=(10, 10))
@@ -49,12 +53,16 @@ class Main:
     def extract_dates(self, consumed_string):
         return re.findall(r"(\d{2}:\d{2} \d{2}-\d{2}-\d{4})", consumed_string)
 
-    def save_data(self, alert_lvl, code, date_tuple):
+    def save_data(self, alert_lvl, code, date_tuple, mock):
         current_date = datetime.now()
 
         date_format = "%H:%M %d-%m-%Y"
         ini_date = datetime.strptime(date_tuple[0], date_format)
         end_date = datetime.strptime(date_tuple[1], date_format)
+
+        if mock :
+            ini_date = current_date-timedelta(hours=1)
+            end_date = current_date+timedelta(hours=1)
 
         if ini_date < current_date < end_date:
             if alert_lvl == "amarillo":
@@ -73,6 +81,7 @@ class Main:
 
     def draw_polygon(self):
         for code in self.alert_set:
+            self.comm_check(self.alert_set[code], code)
             if self.alert_set[code] == "amarillo":
                 alert = self.geojsonAemet[self.geojsonAemet["COD_Z"] == code]
                 alert.plot(ax=self.ax_base, color=Color.DARK_YELLOW, edgecolor=Color.LIGHT_YELLOW)
@@ -82,6 +91,48 @@ class Main:
             elif self.alert_set[code] == "rojo":
                 alert = self.geojsonAemet[self.geojsonAemet["COD_Z"] == code]
                 alert.plot(ax=self.ax_base, color=Color.DARK_RED, edgecolor=Color.LIGHT_RED)
+
+    def comm_check(self, alert_lvl, cod_z):
+        comm = self.geojsonAemet[self.geojsonAemet["COD_Z"] == cod_z].iloc[0]["NOM_CCAA"]
+
+        if comm in CONS.COMM_PARSE:
+            comm = CONS.COMM_PARSE[comm]
+
+        if comm not in self.comm_set:
+            self.comm_set[comm] = alert_lvl
+        elif self.comm_set[comm] == "amarillo" and (alert_lvl == "naranja" or alert_lvl == "rojo"):
+            self.comm_set[comm] = alert_lvl
+        elif self.comm_set[comm] == "naranja" and alert_lvl == "rojo":
+            self.comm_set[comm] = alert_lvl
+
+    def post_text(self):
+        text = ""
+
+        alert_groups = {}
+        for comm, color in self.comm_set.items():
+            alert_groups.setdefault(color, []).append(comm)
+
+        color_parse = {
+            'rojo': '🔴 Alerta roja',
+            'naranja': '🟠 Alerta naranja',
+            'amarillo': '🟡 Alerta amarilla'
+        }
+
+        for color in ["rojo", "naranja", "amarillo"]:
+            if color in alert_groups:
+                comm = alert_groups[color]
+                if len(comm) > 1:
+                    comm[-1] = "y " + comm[-1]  # Añadir 'y' al último elemento
+                    text += f"{color_parse[color]} en:\n{', '.join(comm)}\n"
+                else:
+                    text += f"{color_parse[color]} en:\n{comm[0]}\n"
+
+        if text == "":
+            text = "🟢 Actualmente no hay ningún aviso activo.\n"
+
+        text += f"\nPara más información acude a aemet.es"
+
+        return text
 
     def save_image(self):
         plt.savefig("../resources/media/full_map.png", dpi=300, bbox_inches='tight', pad_inches=0)
@@ -102,22 +153,25 @@ class Main:
             img.set_array(img_gray)
 
     def extract_data(self):
-        if self.rssponse.status_code == 200:
+        if self.mock:
+            root = ET.parse(self.rssponse).getroot()
+        else:
             root = ET.fromstring(self.rssponse.content)
-            channel = root.find('channel')
 
-            for item in channel.findall('item'):
-                title = item.find('title').text
-                link = item.find('link').text
-                description = item.find('description').text
+        channel = root.find('channel')
 
-                code = re.search(r"_AFAZ(\w{7})", link).group(1)
-                if code[-1] != "C":
-                    code = code[:-1]
+        for item in channel.findall('item'):
+            title = item.find('title').text
+            link = item.find('link').text
+            description = item.find('description').text
 
-                alert = title.split("Nivel ")[1].split()[0].rstrip(".")
-                date_tuple = self.extract_dates(description)
-                self.save_data(alert, code, date_tuple)
+            code = re.search(r"_AFAZ(\w{7})", link).group(1)
+            if code[-1] != "C":
+                code = code[:-1]
+
+            alert = title.split("Nivel ")[1].split()[0].rstrip(".")
+            date_tuple = self.extract_dates(description)
+            self.save_data(alert, code, date_tuple, self.mock)
 
     def plt_to_image(self):
         buf = io.BytesIO()
@@ -158,12 +212,13 @@ class Main:
 
     # def alerts_by_commm(self):
 
+is_mock = False
 
 load_dotenv()
 client = Client()
 client.login(os.getenv("BLUESKY_USERNAME"), os.getenv("BLUESKY_PASSWORD"))
 
-main = Main()
+main = Main(is_mock)
 main.map_highlight()
 main.extract_data()
 main.draw_polygon()
@@ -183,7 +238,7 @@ buffer = io.BytesIO()
 image_pil.save(buffer, format="PNG")
 
 post = client.send_image(
-    text = "This a test of a post with both image and text",
+    text = main.post_text(),
     image = buffer.getvalue(),
-    image_alt = "Test image"
+    image_alt = "Mapa AEMET"
 )
