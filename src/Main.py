@@ -11,7 +11,7 @@ import numpy as np
 from PIL import Image
 import geopandas as gpd
 import contextily as ctx
-from atproto import Client
+from atproto import Client, client_utils
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import matplotlib.pyplot as plt
@@ -133,7 +133,7 @@ class Main:
         if text == "":
             text = "🟢 Actualmente no hay ningún aviso activo.\n"
 
-        text += f"\nPara más información acude a aemet.es"
+        text += f"\nPara más información acude a "
 
         return text
 
@@ -231,6 +231,7 @@ main.save_image()
 main.plt_to_image()
 main.gen_final_map()
 main.final_data()
+text = main.post_text()
 
 image = cv2.imread("../resources/media/final_map.png")
 
@@ -241,7 +242,7 @@ buffer = io.BytesIO()
 image_pil.save(buffer, format="PNG")
 
 post = client.send_image(
-    text = main.post_text(),
-    image = buffer.getvalue(),
-    image_alt = "Mapa AEMET"
+    client_utils.TextBuilder().text(text).link("www.aemet.es", "https://www.aemet.es/es/eltiempo/prediccion/avisos"),
+    buffer.getvalue(),
+    "Mapa AEMET"
 )
