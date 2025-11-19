@@ -118,7 +118,7 @@ class Main:
         color_parse = {
             'rojo': '🔴 Aviso rojo',
             'naranja': '🟠 Aviso naranja',
-            'amarillo': '🟡 Aviso amarilla'
+            'amarillo': '🟡 Aviso amarillo'
         }
 
         for color in ["rojo", "naranja", "amarillo"]:
@@ -200,9 +200,9 @@ class Main:
 
     def final_data(self):
         legend_patches = [
-            mpatches.Patch(color=Color.DARK_YELLOW, label=f"Amarilla ({self.y_quanto})"),
+            mpatches.Patch(color=Color.DARK_YELLOW, label=f"Amarillo ({self.y_quanto})"),
             mpatches.Patch(color=Color.DARK_ORANGE, label=f"Naranja ({self.o_quanto})"),
-            mpatches.Patch(color=Color.DARK_RED, label=f"Roja ({self.r_quanto})"),
+            mpatches.Patch(color=Color.DARK_RED, label=f"Rojo ({self.r_quanto})"),
         ]
         self.ax_final.legend(handles=legend_patches, title="⚠ Avisos activos", loc="lower right", framealpha=0.4)
 
