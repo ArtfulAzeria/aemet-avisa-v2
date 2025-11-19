@@ -32,7 +32,7 @@ class Main:
         self.geojsonCommunities = gpd.read_file(CONS.COMMUNITIES_GEOJSON).to_crs(epsg=3857)
         self.fig_base, self.ax_base = plt.subplots(figsize=(10, 10))
         self.fig_final, self.ax_final = plt.subplots()
-        self.alert_set = {}
+        self.aemet_warning_set = {}
         self.comm_set = {}
         self.y_quanto = 0
         self.o_quanto = 0
@@ -53,7 +53,7 @@ class Main:
     def extract_dates(self, consumed_string):
         return re.findall(r"(\d{2}:\d{2} \d{2}-\d{2}-\d{4})", consumed_string)
 
-    def save_data(self, alert_lvl, code, date_tuple, mock):
+    def save_data(self, aemet_warning_lvl, code, date_tuple, mock):
         current_date = datetime.now()
 
         date_format = "%H:%M %d-%m-%Y"
@@ -65,45 +65,45 @@ class Main:
             end_date = current_date+timedelta(hours=1)
 
         if ini_date < current_date < end_date:
-            if alert_lvl == "amarillo":
+            if aemet_warning_lvl == "amarillo":
                 self.y_quanto += 1
-            elif alert_lvl == "naranja":
+            elif aemet_warning_lvl == "naranja":
                 self.o_quanto += 1
-            elif alert_lvl == "rojo":
+            elif aemet_warning_lvl == "rojo":
                 self.r_quanto += 1
 
-            if code not in self.alert_set:
-                self.alert_set[code] = alert_lvl
-            elif self.alert_set[code] == "amarillo" and (alert_lvl == "naranja" or alert_lvl == "rojo"):
-                self.alert_set[code] = alert_lvl
-            elif self.alert_set[code] == "naranja" and alert_lvl == "rojo":
-                self.alert_set[code] = alert_lvl
+            if code not in self.aemet_warning_set:
+                self.aemet_warning_set[code] = aemet_warning_lvl
+            elif self.aemet_warning_set[code] == "amarillo" and (aemet_warning_lvl == "naranja" or aemet_warning_lvl == "rojo"):
+                self.aemet_warning_set[code] = aemet_warning_lvl
+            elif self.aemet_warning_set[code] == "naranja" and aemet_warning_lvl == "rojo":
+                self.aemet_warning_set[code] = aemet_warning_lvl
 
     def draw_polygon(self):
-        for code in self.alert_set:
-            self.comm_check(self.alert_set[code], code)
-            if self.alert_set[code] == "amarillo":
-                alert = self.geojsonAemet[self.geojsonAemet["COD_Z"] == code]
-                alert.plot(ax=self.ax_base, color=Color.DARK_YELLOW, edgecolor=Color.LIGHT_YELLOW)
-            elif self.alert_set[code] == "naranja":
-                alert = self.geojsonAemet[self.geojsonAemet["COD_Z"] == code]
-                alert.plot(ax=self.ax_base, color=Color.DARK_ORANGE, edgecolor=Color.LIGHT_ORANGE)
-            elif self.alert_set[code] == "rojo":
-                alert = self.geojsonAemet[self.geojsonAemet["COD_Z"] == code]
-                alert.plot(ax=self.ax_base, color=Color.DARK_RED, edgecolor=Color.LIGHT_RED)
+        for code in self.aemet_warning_set:
+            self.comm_check(self.aemet_warning_set[code], code)
+            if self.aemet_warning_set[code] == "amarillo":
+                aemet_warning = self.geojsonAemet[self.geojsonAemet["COD_Z"] == code]
+                aemet_warning.plot(ax=self.ax_base, color=Color.DARK_YELLOW, edgecolor=Color.LIGHT_YELLOW)
+            elif self.aemet_warning_set[code] == "naranja":
+                aemet_warning = self.geojsonAemet[self.geojsonAemet["COD_Z"] == code]
+                aemet_warning.plot(ax=self.ax_base, color=Color.DARK_ORANGE, edgecolor=Color.LIGHT_ORANGE)
+            elif self.aemet_warning_set[code] == "rojo":
+                aemet_warning = self.geojsonAemet[self.geojsonAemet["COD_Z"] == code]
+                aemet_warning.plot(ax=self.ax_base, color=Color.DARK_RED, edgecolor=Color.LIGHT_RED)
 
-    def comm_check(self, alert_lvl, cod_z):
+    def comm_check(self, aemet_warning_lvl, cod_z):
         comm = self.geojsonAemet[self.geojsonAemet["COD_Z"] == cod_z].iloc[0]["NOM_CCAA"]
 
         if comm in CONS.COMM_PARSE:
             comm = CONS.COMM_PARSE[comm]
 
         if comm not in self.comm_set:
-            self.comm_set[comm] = alert_lvl
-        elif self.comm_set[comm] == "amarillo" and (alert_lvl == "naranja" or alert_lvl == "rojo"):
-            self.comm_set[comm] = alert_lvl
-        elif self.comm_set[comm] == "naranja" and alert_lvl == "rojo":
-            self.comm_set[comm] = alert_lvl
+            self.comm_set[comm] = aemet_warning_lvl
+        elif self.comm_set[comm] == "amarillo" and (aemet_warning_lvl == "naranja" or aemet_warning_lvl == "rojo"):
+            self.comm_set[comm] = aemet_warning_lvl
+        elif self.comm_set[comm] == "naranja" and aemet_warning_lvl == "rojo":
+            self.comm_set[comm] = aemet_warning_lvl
 
     def post_text(self):
         if self.mock:
@@ -111,19 +111,19 @@ class Main:
 
         text = ""
 
-        alert_groups = {}
+        aemet_warning_groups = {}
         for comm, color in self.comm_set.items():
-            alert_groups.setdefault(color, []).append(comm)
+            aemet_warning_groups.setdefault(color, []).append(comm)
 
         color_parse = {
-            'rojo': '🔴 Alerta roja',
-            'naranja': '🟠 Alerta naranja',
-            'amarillo': '🟡 Alerta amarilla'
+            'rojo': '🔴 Aviso rojo',
+            'naranja': '🟠 Aviso naranja',
+            'amarillo': '🟡 Aviso amarilla'
         }
 
         for color in ["rojo", "naranja", "amarillo"]:
-            if color in alert_groups:
-                comm = alert_groups[color]
+            if color in aemet_warning_groups:
+                comm = aemet_warning_groups[color]
                 if len(comm) > 1:
                     comm[-1] = "y " + comm[-1]  # Añadir 'y' al último elemento
                     text += f"{color_parse[color]} en:\n{', '.join(comm)}\n"
@@ -172,9 +172,9 @@ class Main:
             if code[-1] != "C":
                 code = code[:-1]
 
-            alert = title.split("Nivel ")[1].split()[0].rstrip(".")
+            aemet_warning = title.split("Nivel ")[1].split()[0].rstrip(".")
             date_tuple = self.extract_dates(description)
-            self.save_data(alert, code, date_tuple, self.mock)
+            self.save_data(aemet_warning, code, date_tuple, self.mock)
 
     def plt_to_image(self):
         buf = io.BytesIO()
@@ -204,7 +204,7 @@ class Main:
             mpatches.Patch(color=Color.DARK_ORANGE, label=f"Naranja ({self.o_quanto})"),
             mpatches.Patch(color=Color.DARK_RED, label=f"Roja ({self.r_quanto})"),
         ]
-        self.ax_final.legend(handles=legend_patches, title="⚠ Alertas activas", loc="lower right", framealpha=0.4)
+        self.ax_final.legend(handles=legend_patches, title="⚠ Avisos activos", loc="lower right", framealpha=0.4)
 
         map_datetime = datetime.now().strftime("%d-%m-%Y\n%H:%M:%S")
 
@@ -213,7 +213,7 @@ class Main:
 
         plt.savefig("../resources/media/final_map.png", dpi=300, bbox_inches='tight', pad_inches=0)
 
-    # def alerts_by_commm(self):
+    # def aemet_warnings_by_commm(self):
 
 is_mock = False
 
